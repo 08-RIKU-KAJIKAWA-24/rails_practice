@@ -1,0 +1,8 @@
+<h1>Things to buy</h1>
+<div class="catalog">
+  <% @posts.each do |post| %>
+    <div class="catalog_body">
+      <%= post.content %>
+    </div>
+  <% end %>
+</div>

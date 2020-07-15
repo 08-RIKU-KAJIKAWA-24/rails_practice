@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Riku's Bank</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <li>
+      <ul>
+        <%= link_to("top", "/") %>
+      </ul>
+      <ul>
+        <%= link_to("about", "/about") %>
+      </ul>
+      <ul>
+        <%= link_to("new", "/posts/new") %>
+      </ul>
+      <ul>
+        <%= link_to("catalog", "/posts/index") %>
+      </ul>
+    </li>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

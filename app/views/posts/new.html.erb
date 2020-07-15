@@ -1,0 +1,9 @@
+<div class="form">
+  <div class="form_body">
+    <label for="example">Fill in here</label>
+    <%= form_tag("/posts/create") do %>
+      <textarea name="content" rows="4" cols="60"></textarea>
+      <input type="submit" value="add">
+    <% end %>
+  </div>
+</div>
